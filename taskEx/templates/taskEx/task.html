@@ -1,4 +1,4 @@
-{% extend "taskEx/layout" %}
+{% extends "taskEx/layout.html" %}
 
     {% block body %}
     <h1>tasks</h1>
@@ -7,4 +7,5 @@
     <li>{{i}}</li>
     {% endfor %}
     </ul>
+    <a href="{%url 'taskEx:add'%}">add your task</a>
     {% endblock %}
